@@ -1,19 +1,14 @@
 :root {
 	--background-color: #F9F9FA;
-	--foreground-color: #333333;
-	--highlight: white;
+	--foreground-color: #ffffff;
+	--highlight: rgb(71, 87, 233);
 	--font-family: Helvetica, sans-serif;
-}
-
-div {	
-	width: 70% !important;
 }
 
 body {
 	text-align: center;
 	margin: 0 auto;
 	font: 14px var(--font-family);
-	color: var(--foreground-color);
 	background-color: var(--background-color);
 	width: 620px;
 	max-width: 100%;
@@ -36,22 +31,18 @@ header h1 {
 h5 {
 	font-size: 1rem;
 	margin-bottom: 0;
-	border-bottom: 1px dashed orange;
+	border-bottom: 1px dashed white;
 	display: inline-block;
 }
 
 /* ** SECTION ** */
 section {
   display: block;
-  text-align: center;
+  text-align: left;
   margin: 2.5rem auto;
   padding-left: 5rem;
   padding-right: 5rem;
 
-}
-
-a {
-  text-align:left;
 }
 
 section summary {
@@ -60,12 +51,17 @@ section summary {
 	margin-right: 3rem;
 }
 
+summary:hover {
+	cursor: unset !important;
+}
+
 section summary aside {
 	display: flex;
 	align-items: center;
-	width: 4rem;
+	width: 6rem;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
+	align-items: start;
 }
 /****************/
 
@@ -80,23 +76,28 @@ footer a i {
 /****************/
 
 a {
-  color: var(--foreground-color);
+  color: var(--foreground-color) !important;
   text-decoration: none;
+  text-align:left;
 }
 
 a:hover {
-  color: var(--highlight);
+  color: var(--highlight) !important;
   text-decoration: none;
 }
 
-a.twitter:hover {
-	color: #1DA1F3;
+a.github:hover {
+	color: #1DA1F3 !important;
 }
 
 a.linkedin:hover {
-	color: #0077B5;
+	color: #0077B5 !important;
 }
 
 i {
 	font-size: 2rem;
+}
+
+.icon-header {
+	width: 100%;
 }
